@@ -1,0 +1,125 @@
+{
+    "targets": [
+        "water",
+        "translucent",
+        "itemEntity",
+        "particles",
+        "clouds",
+        "weather",
+        "final",
+        "bloom_area",
+        "swap",
+        "bloom"
+    ],
+    "passes": [
+        {
+            "name": "makebloom",
+            "intarget": "minecraft:main",
+            "outtarget": "swap",
+            "auxtargets": [
+                {
+                    "name": "GreenSampler",
+                    "id": "minecraft:main"
+                }
+            ],
+            "uniforms": [
+                { "name": "Power", "values": [ 0.5 ] }
+            ]
+        },
+        {
+            "name": "makebloom",
+            "intarget": "swap",
+            "outtarget": "bloom",
+            "auxtargets": [
+                {
+                    "name": "GreenSampler",
+                    "id": "swap"
+                }
+            ],
+            "uniforms": [
+                { "name": "Power", "values": [ 1.0 ] }
+            ]
+        },
+        {
+            "name": "transparency",
+            "intarget": "minecraft:main",
+            "outtarget": "final",
+            "auxtargets": [
+                {
+                    "name": "DiffuseDepthSampler",
+                    "id": "minecraft:main:depth"
+                },
+                {
+                    "name": "TranslucentSampler",
+                    "id": "translucent"
+                },
+                {
+                    "name": "TranslucentDepthSampler",
+                    "id": "translucent:depth"
+                },
+                {
+                    "name": "ItemEntitySampler",
+                    "id": "itemEntity"
+                },
+                {
+                    "name": "ItemEntityDepthSampler",
+                    "id": "itemEntity:depth"
+                },
+                {
+                    "name": "ParticlesSampler",
+                    "id": "particles"
+                },
+                {
+                    "name": "ParticlesDepthSampler",
+                    "id": "particles:depth"
+                },
+                {
+                    "name": "CloudsSampler",
+                    "id": "clouds"
+                },
+                {
+                    "name": "CloudsDepthSampler",
+                    "id": "clouds:depth"
+                },
+                {
+                    "name": "WeatherSampler",
+                    "id": "weather"
+                },
+                {
+                    "name": "WeatherDepthSampler",
+                    "id": "weather:depth"
+                }
+            ]
+        },
+        {
+            "name": "fade",
+            "intarget": "bloom",
+            "outtarget": "swap",
+            "auxtargets": [
+                {
+                    "name": "FirstSampler",
+                    "id": "final"
+                },
+                {
+                    "name": "SecondSampler",
+                    "id": "bloom"
+                }
+            ]
+        },
+        {
+            "name": "back",
+            "intarget": "swap",
+            "outtarget": "minecraft:main",
+            "auxtargets": [
+                {
+                    "name": "FirstSampler",
+                    "id": "swap"
+                },
+                {
+                    "name": "SecondSampler",
+                    "id": "bloom_area"
+                }
+            ]
+        }
+    ]
+}

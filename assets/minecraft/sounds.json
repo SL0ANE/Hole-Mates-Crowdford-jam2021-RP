@@ -1,0 +1,158 @@
+{
+    "music.menu": {
+		"replace": "true",
+		"sounds": [
+			{
+				"name": ""
+			}
+		]
+	},
+    "music.game": {
+		"replace": "true",
+		"sounds": [
+			{
+				"name": ""
+			}
+		]
+	},
+    "music.end": {
+		"replace": "true",
+		"sounds": [
+			{
+				"name": ""
+			}
+		]
+	},
+    "music.dragon": {
+		"replace": "true",
+		"sounds": [
+			{
+				"name": ""
+			}
+		]
+	},
+    "music.credits": {
+		"replace": "true",
+		"sounds": [
+			{
+				"name": ""
+			}
+		]
+	},
+    "music.creative": {
+		"replace": "true",
+		"sounds": [
+			{
+				"name": ""
+			}
+		]
+	},
+	"item.armor.equip_generic": {
+		"replace": "true",
+		"sounds": [
+			{
+				"name": ""
+			}
+		]
+	},
+    "sans": {
+        "sounds": [
+            {
+                "name": "sans"
+            }
+        ]
+	},
+	"loier": {
+        "sounds": [
+            {
+                "name": "loier",
+                "pitch": 1.0
+            }
+        ]
+    },
+    "ppados": {
+        "sounds": [
+            {
+                "name": "ppados_0"
+            },
+            {
+                "name": "ppados_1"
+            },
+            {
+                "name": "ppados_2"
+            }
+        ]
+    },
+    "block.glass.step": {
+        "replace": "true",
+        "sounds": [
+            {
+                "name": ""
+            }
+        ]
+    },
+    "block.stone.step": {
+        "replace": "true",
+        "sounds": [
+            {
+                "name": ""
+            }
+        ]
+    },
+    "block.shroomlight.step":{
+        "replace": "true",
+        "sounds": [
+            {
+                "name": ""
+            }
+        ]
+    },
+    "block.metal.step": {
+        "replace": "true",
+        "sounds": [
+            {
+                "name": ""
+            }
+        ]
+    },
+    "block.wood.step": {
+        "replace": "true",
+        "sounds": [
+            {
+                "name": ""
+            }
+        ]
+    },
+    "block.wool.step": {
+        "replace": "true",
+        "sounds": [
+            {
+                "name": ""
+            }
+        ]
+    },
+    "block.nether_bricks.step": {
+        "replace": "true",
+        "sounds": [
+            {
+                "name": ""
+            }
+        ]
+    },
+    "entity.player.attack.weak": {
+        "replace": "true",
+        "sounds": [
+            {
+                "name": ""
+            }
+        ]
+    },
+    "entity.player.attack.nodamage": {
+        "replace": "true",
+        "sounds": [
+            {
+                "name": ""
+            }
+        ]
+    }
+}
